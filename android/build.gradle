@@ -63,5 +63,5 @@ dependencies {
     // 百度导航
     implementation 'com.baidu.lbsyun:BaiduMapSDK_Map-Navi:7.5.0'
 
-    compileOnly 'androidx.annotation:annotation:1.1.0'
+//    compileOnly 'androidx.annotation:annotation:1.1.0'
 }
