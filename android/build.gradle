@@ -35,16 +35,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
 
-    defaultConfig {
-        minSdkVersion 19
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        ndk {
-            // 设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86","x86_64"
-        }
-    }
+//    defaultConfig {
+//        minSdkVersion 19
+//    }
     lintOptions {
         disable 'InvalidPackage'
     }
@@ -65,4 +60,6 @@ dependencies {
 
     // 百度导航
     implementation 'com.baidu.lbsyun:BaiduMapSDK_Map-Navi:7.5.0'
+
+    compileOnly 'androidx.annotation:annotation:1.1.0'
 }
