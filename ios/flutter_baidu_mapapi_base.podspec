@@ -16,7 +16,7 @@ A Flutter plugin for BaiduMapAPI_Base.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'BaiduMapKit/Utils','6.5.3' # utils强依赖base
+  s.dependency 'BaiduMapKit/Utils','6.5.2' # utils强依赖base
   s.platform = :ios, '8.0'
   s.static_framework = true
 
