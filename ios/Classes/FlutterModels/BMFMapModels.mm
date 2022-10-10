@@ -240,7 +240,7 @@
     buildInfo.height = info.height;
     buildInfo.accuracy = info.accuracy;
     buildInfo.paths = info.paths;
-    buildInfo.center = info.center;
+    //buildInfo.center = info.center;
     return buildInfo;
 }
 
@@ -252,9 +252,9 @@
     if (self.paths) {
         [info setValue:self.paths forKey:@"_paths"];
     }
-    if (self.center) {
-        [info setValue:self.center forKey:@"_center"];
-    }
+    //if (self.center) {
+    //   [info setValue:self.center forKey:@"_center"];
+    //}
     return info;
 }
 

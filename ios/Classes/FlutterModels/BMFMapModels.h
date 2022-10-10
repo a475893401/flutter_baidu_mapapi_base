@@ -177,7 +177,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *paths;
 
 /// 加密后的中心点
-@property (nonatomic, copy) BMFCoordinate *center;
+@property (nonatomic, copy) NSString *center;
 
 + (instancetype)fromBMKBuildInfo:(BMKBuildInfo *)info;
 
