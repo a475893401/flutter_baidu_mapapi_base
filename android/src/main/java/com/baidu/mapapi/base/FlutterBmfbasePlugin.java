@@ -14,6 +14,9 @@ import com.baidu.mapapi.CoordType;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.VersionInfo;
 import com.baidu.mapapi.common.BaiduMapSDKException;
+import android.app.Application;
+import android.content.Context;
+
 
 /** FlutterBmfbasePlugin */
 public class FlutterBmfbasePlugin implements FlutterPlugin, MethodCallHandler {
@@ -50,6 +53,13 @@ public class FlutterBmfbasePlugin implements FlutterPlugin, MethodCallHandler {
       versionMap.put("platform", "Android");
       result.success(versionMap);
     } else if(call.method.equals(METHOD_SET_API_KEY)){
+          try {
+            SDKInitializer.initialize(getApplicationContext());
+        } catch (BaiduMapSDKException e) {
+            e.getMessage();
+        }
+       
+    
       if(call.hasArgument("BMF_COORD_TYPE")){
         int nCoordType = call.argument("BMF_COORD_TYPE");
 
