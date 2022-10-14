@@ -19,11 +19,6 @@ public class BmfMapApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
-        try {
-            SDKInitializer.setAgreePrivacy(this, false);
-            SDKInitializer.initialize(this);
-        } catch (BaiduMapSDKException e) {
-            e.getMessage();
-        }
+  
     }
 }
